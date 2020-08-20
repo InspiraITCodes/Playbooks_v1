@@ -1,0 +1,10 @@
+- name: Send a success e-mail 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: username@gmail.com
+    password: password
+    to: User <user@example.com>
+    subject: Ping
+    body: 'The ping test has been completed successfully'
+  delegate_to: localhost
